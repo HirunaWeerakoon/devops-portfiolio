@@ -26,7 +26,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs text-slate-400 font-sans leading-relaxed max-w-sm">
-              Progressive Technical Depth DevOps Portfolio &bull; Engineered with high-contrast White, Elite Blue (#0251B0), and Volt Lime (#D1FF42) for technical recruiters and engineering managers.
+              DevOps & Software Engineering Portfolio.
             </p>
             <div className="flex items-center gap-2 text-[11px] text-slate-400">
               <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -37,23 +37,23 @@ export default function Footer() {
           {/* Quick Section Links */}
           <div className="md:col-span-4 space-y-2 text-xs">
             <div className="text-slate-400 uppercase font-bold text-[10px] tracking-wider mb-2">
-              Architecture Index
+              Navigation
             </div>
             <div className="grid grid-cols-2 gap-2 text-slate-300">
               <a href="#about" className="hover:text-volt-lime transition-colors">
-                &gt; About Profile
+                &gt; About
               </a>
               <a href="#devops-projects" className="hover:text-volt-lime transition-colors">
-                &gt; Model A: Drawers
+                &gt; DevOps Projects
               </a>
               <a href="#standard-projects" className="hover:text-volt-lime transition-colors">
-                &gt; Model B: 3D Flip
+                &gt; Projects
               </a>
               <a href="#certificates" className="hover:text-volt-lime transition-colors">
-                &gt; CLI Certificates
+                &gt; Certifications
               </a>
               <a href="#contact" className="hover:text-volt-lime transition-colors">
-                &gt; Trigger Build
+                &gt; Contact
               </a>
             </div>
           </div>

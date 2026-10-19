@@ -92,34 +92,18 @@ export default function TerminalCertificates() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-4 border-b-2 border-elite-blue">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b-2 border-elite-blue">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-elite-blue uppercase mb-1">
-              <span className="w-2.5 h-2.5 bg-volt-lime border border-slate-900 inline-block"></span>
-              <span>SECTION 04 // TERMINAL CLI</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-slate-950 uppercase tracking-tight">
-              Terminal-Style Certificate Verification
+              Certifications
             </h2>
           </div>
-          <div className="mt-3 md:mt-0 font-mono text-xs text-slate-500">
-            SECURITY HASH: <span className="text-elite-blue font-bold">SHA-256 TLS VERIFIED</span>
-          </div>
-        </div>
-
-        {/* Guidance notice */}
-        <div className="mb-8 p-4 rounded-xl bg-slate-50 border-l-4 border-elite-blue flex items-center gap-3 text-xs sm:text-sm text-slate-700">
-          <Terminal className="w-5 h-5 text-elite-blue flex-shrink-0" />
-          <span>
-            <strong>Specification Requirement:</strong> Standard certification grids are replaced with a secure CLI. Click any command below (e.g. <code className="bg-white px-1.5 py-0.5 rounded border font-mono font-bold text-elite-blue">&gt; fetch kodekloud-engineer-docker-l1.crt</code>) to trigger the simulated 1-second loading sequence and reveal the Volt Lime <strong>VERIFIED</strong> stamp.
-          </span>
         </div>
 
         {/* Available CLI Commands Quick List */}
         <div className="mb-8">
-          <div className="text-xs font-mono text-slate-500 uppercase tracking-wider font-bold mb-3 flex items-center gap-2">
-            <span>Executable Certification Commands:</span>
-            <span className="text-[11px] font-normal text-slate-400">(Click to execute)</span>
+          <div className="text-xs font-mono text-slate-500 uppercase tracking-wider font-semibold mb-3">
+            Select Certificate:
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">

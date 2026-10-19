@@ -75,27 +75,12 @@ export default function TriggerBuildContact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-4 border-b-2 border-elite-blue">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b-2 border-elite-blue">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-elite-blue uppercase mb-1">
-              <span className="w-2.5 h-2.5 bg-volt-lime border border-slate-900 inline-block"></span>
-              <span>SECTION 05 // CI/CD ACTION DISPATCH</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-slate-950 uppercase tracking-tight">
-              "Trigger Build" Contact Gateway
+              Contact
             </h2>
           </div>
-          <div className="mt-3 md:mt-0 font-mono text-xs text-slate-500">
-            DISPATCH TARGET: <span className="text-slate-900 font-semibold">{personalInfo.email}</span>
-          </div>
-        </div>
-
-        {/* Spec Notice Banner */}
-        <div className="mb-10 p-4 rounded-xl bg-white border-l-4 border-elite-blue shadow-sm flex items-center gap-3 text-xs sm:text-sm text-slate-700">
-          <Terminal className="w-5 h-5 text-elite-blue flex-shrink-0" />
-          <span>
-            <strong>Specification Requirement:</strong> Rebranding the mundane contact form into a memorable CI/CD micro-interaction. Clicking the Elite Blue button triggers a rapid sequence of green deployment logs before declaring success!
-          </span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -104,10 +89,10 @@ export default function TriggerBuildContact() {
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-white rounded-2xl p-6 sm:p-8 border-2 border-soft-blue shadow-subtle">
               <h3 className="text-2xl font-heading font-bold text-slate-900 mb-2">
-                Initiate Direct Communication
+                Get in Touch
               </h3>
               <p className="text-xs text-slate-600 mb-6 leading-relaxed">
-                Whether you represent a fast-scaling tech team seeking an ambitious DevOps Engineer, need containerized microservice architectures, or wish to review my academic and production work, my pipeline is open.
+                Feel free to reach out directly via email or LinkedIn for internship opportunities or collaborations.
               </p>
 
               {/* Direct channels */}
@@ -182,16 +167,6 @@ export default function TriggerBuildContact() {
                   <span>Open for Opportunities</span>
                 </span>
               </div>
-            </div>
-
-            {/* Quick Note for Technical Recruiters */}
-            <div className="bg-elite-blue text-white p-5 rounded-2xl shadow-elite border border-elite-blue">
-              <div className="font-mono text-xs text-volt-lime font-bold uppercase mb-1">
-                For Technical Recruiters & Leads
-              </div>
-              <p className="text-xs text-slate-100 leading-relaxed font-sans">
-                Looking for automated take-home assessments, live containerization tests, or architecture walkthroughs? I welcome rigorous technical challenges to demonstrate real-world CI/CD mastery.
-              </p>
             </div>
           </div>
 

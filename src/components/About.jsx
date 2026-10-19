@@ -10,106 +10,52 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-4 border-b-2 border-elite-blue">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-4 border-b-2 border-elite-blue">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-elite-blue uppercase mb-1">
-              <span className="w-2.5 h-2.5 bg-volt-lime border border-slate-900 inline-block"></span>
-              <span>SECTION 01 // PROFESSIONAL PROFILE</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-slate-950 uppercase tracking-tight">
-              About Me & Technical Background
+              About & Skills
             </h2>
-          </div>
-          <div className="mt-3 md:mt-0 font-mono text-xs text-slate-500">
-            LOC: <span className="text-slate-800 font-semibold">{personalInfo.location}</span>
           </div>
         </div>
 
-        {/* Top Grid: Bio & Core Philosophy */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
-          
-          <div className="lg:col-span-7 bg-slate-50/80 rounded-2xl p-6 sm:p-8 border border-soft-blue/70 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-elite-blue/5 rounded-bl-full pointer-events-none"></div>
-            
-            <h3 className="text-xl font-heading font-bold text-slate-900 mb-3 flex items-center gap-2">
-              <Server className="w-5 h-5 text-elite-blue" />
-              <span>Aspiring DevOps Engineer</span>
-            </h3>
-
-            <p className="text-slate-700 leading-relaxed text-sm sm:text-base mb-4">
-              I am a <strong className="text-slate-900 font-semibold">Bachelor of Computer Science undergraduate at SLIIT</strong> focused on containerization with Docker, Linux system administration, and CI/CD automation.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-mono text-xs">
-              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-white border border-soft-blue/60">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Docker Certified & Hands-On</span>
-              </div>
-              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-white border border-soft-blue/60">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Linux System Administration</span>
-              </div>
-              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-white border border-soft-blue/60">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>CI/CD & GitHub Actions</span>
-              </div>
-              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-white border border-soft-blue/60">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>SLIIT CS Undergraduate</span>
-              </div>
-            </div>
+        {/* Technical Competencies Matrix */}
+        <div className="bg-white rounded-2xl p-6 sm:p-8 border-2 border-soft-blue shadow-subtle mb-16">
+          <div className="flex items-center justify-between mb-6 pb-3 border-b border-soft-blue/50">
+            <span className="font-heading font-bold text-xl text-slate-900 flex items-center gap-2">
+              <Cpu className="w-5 h-5 text-elite-blue" />
+              <span>Technical Competencies</span>
+            </span>
           </div>
 
-          {/* Interactive Skills Matrix */}
-          <div className="lg:col-span-5 bg-white rounded-2xl p-6 border-2 border-soft-blue shadow-subtle flex flex-col justify-between">
-            <div>
-              <div className="flex items-center justify-between mb-4 pb-2 border-b border-soft-blue/50">
-                <span className="font-heading font-bold text-lg text-slate-900 flex items-center gap-2">
-                  <Cpu className="w-5 h-5 text-elite-blue" />
-                  <span>Technical Competencies</span>
-                </span>
-                <span className="font-mono text-xs px-2 py-0.5 rounded bg-volt-lime text-slate-900 font-bold">
-                  PROVEN
-                </span>
-              </div>
-
-              {/* Category Tabs */}
-              <div className="grid grid-cols-2 gap-1.5 mb-4 p-1 bg-slate-100 rounded-lg">
-                {skillsData.map((cat, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setActiveSkillCategory(idx)}
-                    className={`text-xs font-mono py-2 px-2.5 rounded-md text-left transition-all truncate ${
-                      activeSkillCategory === idx
-                        ? 'bg-elite-blue text-white font-bold shadow-sm'
-                        : 'text-slate-600 hover:text-slate-900'
-                    }`}
-                  >
-                    {cat.category.split('&')[0]}
-                  </button>
-                ))}
-              </div>
-
-              {/* Skills Tag Cloud */}
-              <div className="space-y-2">
-                <div className="text-xs font-mono font-semibold text-slate-500 uppercase tracking-wider mb-2">
-                  {skillsData[activeSkillCategory].category} Skills:
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {skillsData[activeSkillCategory].skills.map((skill, sIdx) => (
-                    <span 
-                      key={sIdx}
-                      className="px-3 py-1.5 rounded-lg text-xs font-mono font-semibold bg-slate-50 text-slate-800 border border-soft-blue hover:border-elite-blue hover:bg-volt-lime/30 transition-all flex items-center gap-1.5 shadow-sm"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-elite-blue"></span>
-                      <span>{skill}</span>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
+          {/* Category Tabs */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6 p-1 bg-slate-100 rounded-lg">
+            {skillsData.map((cat, idx) => (
+              <button
+                key={idx}
+                onClick={() => setActiveSkillCategory(idx)}
+                className={`text-xs font-mono py-2.5 px-3 rounded-md text-center transition-all ${
+                  activeSkillCategory === idx
+                    ? 'bg-elite-blue text-white font-bold shadow-sm'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                {cat.category}
+              </button>
+            ))}
           </div>
 
+          {/* Skills Tag Cloud */}
+          <div className="flex flex-wrap gap-2.5">
+            {skillsData[activeSkillCategory].skills.map((skill, sIdx) => (
+              <span 
+                key={sIdx}
+                className="px-3.5 py-2 rounded-lg text-xs font-mono font-semibold bg-slate-50 text-slate-800 border border-soft-blue hover:border-elite-blue hover:bg-volt-lime/20 transition-all flex items-center gap-2 shadow-sm"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-elite-blue"></span>
+                <span>{skill}</span>
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Experience & Education Dual Columns */}
@@ -136,7 +82,7 @@ export default function About() {
                         {exp.role}
                       </h4>
                       <p className="text-xs font-mono font-semibold text-elite-blue">
-                        {exp.company} &bull; <span className="text-slate-500">{exp.location}</span>
+                        {exp.company}
                       </p>
                     </div>
                     <div className="text-right">
@@ -165,12 +111,12 @@ export default function About() {
             </div>
           </div>
 
-          {/* Education & Academic Rigor */}
+          {/* Education */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-2 mb-2">
               <GraduationCap className="w-5 h-5 text-elite-blue" />
               <h3 className="text-xl font-heading font-bold text-slate-900 tracking-tight uppercase">
-                Education & Academics
+                Education
               </h3>
             </div>
 
@@ -188,9 +134,11 @@ export default function About() {
                   <p className="text-xs font-mono font-semibold text-elite-blue mb-1">
                     {edu.institution}
                   </p>
-                  <div className="text-[11px] font-mono text-slate-500 mb-2">
-                    {edu.period} &bull; {edu.field}
-                  </div>
+                  {edu.period && (
+                    <div className="text-[11px] font-mono text-slate-500 mb-2">
+                      {edu.period} {edu.field && `• ${edu.field}`}
+                    </div>
+                  )}
                   <p className="text-xs text-slate-600 leading-relaxed">
                     {edu.details}
                   </p>

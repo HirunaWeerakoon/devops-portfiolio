@@ -21,33 +21,11 @@ export default function StandardProjectsUnderTheHood() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-4 border-b-2 border-elite-blue">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b-2 border-elite-blue">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-elite-blue uppercase mb-1">
-              <span className="w-2.5 h-2.5 bg-volt-lime border border-slate-900 inline-block"></span>
-              <span>SECTION 03 // MODEL B</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-slate-950 uppercase tracking-tight">
-              Standard Projects: "Under The Hood"
+              Standard Projects
             </h2>
-          </div>
-          <div className="mt-3 md:mt-0">
-            <span className="font-mono text-xs px-3 py-1.5 rounded-full bg-volt-lime text-slate-950 font-bold border border-slate-900 shadow-sm flex items-center gap-1.5">
-              <RotateCw className="w-3.5 h-3.5 animate-spin" style={{ animationDuration: '6s' }} />
-              <span>TOGGLE VOLT LIME SWITCH TO FLIP CARD</span>
-            </span>
-          </div>
-        </div>
-
-        {/* Informative Guidance Banner */}
-        <div className="mb-10 p-4 rounded-xl bg-slate-50 border border-soft-blue flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm text-slate-700">
-          <div className="flex items-center gap-2.5">
-            <span className="p-1.5 rounded-lg bg-volt-lime text-slate-950 font-mono font-bold text-xs border border-slate-900">
-              3D FLIP
-            </span>
-            <span>
-              <strong>Specification Requirement:</strong> Software engineering project cards with traditional UI thumbnail, featuring a <strong>Volt Lime "View Infrastructure" toggle</strong> at top right. Flip the card to inspect container architecture, reverse proxy routing, and Docker topologies.
-            </span>
           </div>
         </div>
 

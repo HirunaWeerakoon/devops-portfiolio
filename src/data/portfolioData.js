@@ -62,23 +62,16 @@ export const educationData = [
   {
     degree: "Bachelor of Computer Science",
     institution: "SLIIT",
-    period: "October 2024 - October 2028",
-    field: "Computer and Information Sciences and Support Services",
-    details: "Undergraduate degree program focusing on software engineering, computer networks, operating systems, and computer science fundamentals."
+    period: "2024 - 2028",
+    field: "Computing",
+    details: "Undergraduate degree program focusing on software engineering, computer networks, and operating systems."
   },
   {
     degree: "Secondary Education",
     institution: "Kegalu Vidyalaya",
-    period: "July 2017 - August 2023",
-    field: "High School",
-    details: "Completed secondary education with focus on analytical studies and computing foundations."
-  },
-  {
-    degree: "Primary & Junior Education",
-    institution: "Mayurapada National College, Mawanella",
-    period: "January 2010 - July 2017",
-    field: "Primary & Junior Schooling",
-    details: "Foundational education and early extracurricular activities."
+    period: "",
+    field: "",
+    details: "High school education with foundations in mathematics and analytical studies."
   }
 ];
 

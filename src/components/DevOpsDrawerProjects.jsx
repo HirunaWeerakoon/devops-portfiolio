@@ -33,30 +33,11 @@ export default function DevOpsDrawerProjects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-4 border-b-2 border-elite-blue">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b-2 border-elite-blue">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-elite-blue uppercase mb-1">
-              <span className="w-2.5 h-2.5 bg-elite-blue inline-block"></span>
-              <span>SECTION 02 // MODEL A</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-slate-950 uppercase tracking-tight">
-              DevOps Projects: Interactive Pipeline Drawer
+              DevOps Projects
             </h2>
-          </div>
-          <div className="mt-3 md:mt-0">
-            <span className="font-mono text-xs px-3 py-1.5 rounded-full bg-elite-blue/10 text-elite-blue font-bold border border-elite-blue/20">
-              CLICK CARD TO EXPAND PIPELINE STAGES
-            </span>
-          </div>
-        </div>
-
-        {/* Intro notice banner */}
-        <div className="mb-8 p-4 rounded-xl bg-white border-l-4 border-elite-blue shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm text-slate-700">
-          <div className="flex items-center gap-2.5">
-            <GitBranch className="w-4 h-4 text-elite-blue flex-shrink-0" />
-            <span>
-              Click any project card below to expand the interactive pipeline drawer and inspect stage execution logs and configuration files.
-            </span>
           </div>
         </div>
 
