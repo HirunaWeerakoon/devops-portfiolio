@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-white: #ffffff;
+    --elite-blue: #0251b0;
+    --volt-lime: #d1ff42;
+    --soft-blue: #c7d1dd;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #0f172a;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-code {
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+
+/* Custom 3D Card Flip utility for Model B */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Custom Scrollbar for Terminal & Logs */
+.terminal-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.terminal-scroll::-webkit-scrollbar-track {
+  background: #070e1a;
+}
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background: #1e2c45;
+  border-radius: 3px;
+}
+.terminal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #0251b0;
+}
+
+/* Scanline and Grid effect */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(199, 209, 221, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(199, 209, 221, 0.35) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(2, 81, 176, 0.15) 1px, transparent 1px);
+}
