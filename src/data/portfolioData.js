@@ -6,7 +6,7 @@ export const personalInfo = {
   email: "hirunamw2004@gmail.com",
   linkedin: "https://www.linkedin.com/in/hiruna-weerakoon",
   github: "https://github.com/HirunaWeerakoon",
-  summary: "Driven and detail-oriented Computer Science undergraduate at SLIIT and aspiring DevOps Engineer. Experienced in web development at Via Codos, Linux systems administration, and hands-on containerization with Docker. Passionate about automating reliable workflows and learning cloud infrastructure.",
+  summary: "Driven and detail-oriented Computer Science undergraduate at SLIIT and aspiring DevOps Engineer with focus on Docker, Linux systems administration, and CI/CD pipelines.",
 };
 
 export const skillsData = [
@@ -371,14 +371,14 @@ export const devopsProjects = [
 // MODEL B: STANDARD PROJECTS WITH "VIEW INFRASTRUCTURE" 3D FLIP
 export const standardProjects = [
   {
-    id: "via-codos-portal",
-    title: "Via Codos Enterprise Client Portal",
+    id: "enterprise-portal",
+    title: "Enterprise Client Management Portal",
     category: "Full-Stack Web App",
-    role: "Web Developer",
-    badge: "Production System",
+    role: "Full-Stack Developer",
+    badge: "Web System",
     description: "High-performance enterprise portal built with modern web technologies, handling client service provisioning, real-time ticket tracking, and authenticated client dashboards.",
     uiOverview: {
-      clientUrl: "https://viacodos.com",
+      clientUrl: "https://github.com/HirunaWeerakoon",
       features: [
         "Interactive client management interface with responsive data tables",
         "Secure JWT authentication with role-based dashboard views",

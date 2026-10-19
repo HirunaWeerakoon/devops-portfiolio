@@ -53,11 +53,9 @@ export default function DevOpsDrawerProjects() {
         {/* Intro notice banner */}
         <div className="mb-8 p-4 rounded-xl bg-white border-l-4 border-elite-blue shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm text-slate-700">
           <div className="flex items-center gap-2.5">
-            <span className="p-1.5 rounded-lg bg-elite-blue text-volt-lime font-mono font-bold text-xs">
-              CI/CD
-            </span>
+            <GitBranch className="w-4 h-4 text-elite-blue flex-shrink-0" />
             <span>
-              <strong>Specification Requirement:</strong> Clicking any project card expands a horizontal Elite Blue drawer mapping the exact pipeline (Lint ➔ Test ➔ Build ➔ Security ➔ Deploy). Click any node to inspect real-time logs & YAML code.
+              Click any project card below to expand the interactive pipeline drawer and inspect stage execution logs and configuration files.
             </span>
           </div>
         </div>

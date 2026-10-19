@@ -61,12 +61,12 @@ export default function Hero() {
 
             {/* Subtitle / Role */}
             <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
-              <strong className="text-slate-900 font-semibold">{personalInfo.title}</strong> based in Sri Lanka, Computer Science undergraduate at SLIIT, and former Web Developer at Via Codos. Focused on Docker containerization, Linux systems, and automated CI/CD pipelines to streamline development and deployment workflows.
+              <strong className="text-slate-900 font-semibold">{personalInfo.title}</strong> based in Sri Lanka and Computer Science undergraduate at SLIIT. Focused on Docker containerization, Linux systems, and automated CI/CD pipelines to streamline development and deployment workflows.
             </p>
 
             {/* Key Stack Pills */}
             <div className="flex flex-wrap gap-2 pt-1">
-              {['Docker', 'Docker Compose', 'Linux (Ubuntu/Debian)', 'GitHub Actions', 'Bash Scripting', 'Web Development', 'Git'].map((tech) => (
+              {['Docker', 'Linux', 'GitHub Actions', 'Bash Scripting', 'Web Development', 'Git'].map((tech) => (
                 <span 
                   key={tech} 
                   className="px-3 py-1 rounded-md text-xs font-mono font-medium bg-soft-blue/20 text-slate-800 border border-soft-blue/60 hover:border-elite-blue transition-colors"

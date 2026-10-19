@@ -257,7 +257,7 @@ export default function TriggerBuildContact() {
                   >
                     <option value="Production / DevOps Role">Production / Full-Time DevOps Engineer Role</option>
                     <option value="Cloud Migration / IaC Project">Cloud Migration / Kubernetes & Docker Consulting</option>
-                    <option value="Via Codos Collaboration">Via Codos / Web Development Collaboration</option>
+                    <option value="Full-Stack Web Collaboration">Full-Stack / Web Development Collaboration</option>
                     <option value="Technical Interview / Interview Invitation">Technical Interview Invitation</option>
                     <option value="General Technical Inquiry">General Technical Inquiry</option>
                   </select>

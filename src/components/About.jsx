@@ -31,17 +31,13 @@ export default function About() {
           <div className="lg:col-span-7 bg-slate-50/80 rounded-2xl p-6 sm:p-8 border border-soft-blue/70 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-elite-blue/5 rounded-bl-full pointer-events-none"></div>
             
-            <h3 className="text-xl font-heading font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <h3 className="text-xl font-heading font-bold text-slate-900 mb-3 flex items-center gap-2">
               <Server className="w-5 h-5 text-elite-blue" />
-              <span>Aspiring DevOps Engineer with Practical Development Foundations</span>
+              <span>Aspiring DevOps Engineer</span>
             </h3>
 
             <p className="text-slate-700 leading-relaxed text-sm sm:text-base mb-4">
-              I am an aspiring DevOps Engineer and a <strong className="text-slate-900 font-semibold">Bachelor of Computer Science undergraduate at SLIIT</strong>, with hands-on industry experience working as a <strong className="text-elite-blue font-semibold">Web Developer at Via Codos</strong>.
-            </p>
-
-            <p className="text-slate-600 leading-relaxed text-sm mb-6">
-              I am focused on containerization with Docker, Linux systems administration, and automated CI/CD pipelines. Having a foundation in web development, graphic design, and video editing allows me to appreciate end-to-end workflows from user interface design to containerized local setups and deployments.
+              I am a <strong className="text-slate-900 font-semibold">Bachelor of Computer Science undergraduate at SLIIT</strong> focused on containerization with Docker, Linux system administration, and CI/CD automation.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-mono text-xs">
@@ -111,13 +107,6 @@ export default function About() {
                   ))}
                 </div>
               </div>
-            </div>
-
-            <div className="mt-6 pt-4 border-t border-soft-blue/50 bg-slate-50 -mx-6 -mb-6 p-4 rounded-b-2xl flex items-center justify-between text-xs font-mono">
-              <span className="text-slate-500">Core OS of Choice:</span>
-              <span className="font-bold text-slate-900 bg-white px-2.5 py-1 rounded border border-soft-blue">
-                Ubuntu / Debian / Alpine Linux
-              </span>
             </div>
           </div>
 
@@ -207,19 +196,6 @@ export default function About() {
                   </p>
                 </div>
               ))}
-
-              {/* High Energy Motto card */}
-              <div className="bg-elite-blue text-white rounded-xl p-5 shadow-elite border border-elite-blue">
-                <div className="font-mono text-xs uppercase tracking-wider text-volt-lime font-bold mb-1">
-                  Philosophy
-                </div>
-                <div className="font-heading text-lg font-bold">
-                  "If it isn't automated and reproducible, it doesn't exist in production."
-                </div>
-                <p className="text-xs text-slate-200 mt-2 font-mono">
-                  Targeting technical recruiters & engineering leaders seeking precise, dependable automation.
-                </p>
-              </div>
             </div>
 
           </div>
